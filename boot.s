@@ -21,7 +21,7 @@ start:
 	call .bios_prstring 	;print "Computing..." so user knows it works
 
 
-	mov eax, DWORD [PIT]
+	mov eax, DWORD [PIT]	;read time
 	mov [old_time], eax	
 	
 	call arith_test		;arithmetic test
