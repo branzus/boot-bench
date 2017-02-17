@@ -10,7 +10,7 @@ jmp 0x0000:start 		;set cs to 0, ip to 7C00
 
 start:
 	sti			;make sure int 8 is enabled
-	cdq
+	cld
 	xor ax, ax
 	mov ds, ax
 	mov ss, ax
